@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a17">
+  <meta name="description" content="Xinyuan Import: catálogo de productos importados y atención directa por redes sociales.">
+  <title>Xinyuan Import — Catálogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">ATENCIÓN PERSONALIZADA · PEDIDOS DIRECTOS POR WHATSAPP</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Xinyuan Import, inicio">
+      <img class="brand-logo" src="img/logo.png" alt="Logo Xinyuan Import">
+      <span><strong>XINYUAN IMPORT</strong><small>EL REGALO PERFECTO</small></span>
+    </a>
+    <nav><a href="#catalogo">Catálogo</a><a href="#nosotros">Nosotros</a><a class="nav-contact" href="#contacto">Contacto <span>↗</span></a></nav>
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow"><span></span> GUÍA DE REGALOS <span></span></p>
+        <h1>¿NO SABES QUÉ<br><em>REGALARLE?</em></h1>
+        <p class="hero-desc">Nosotros ya seleccionamos los regalos<br>que más les gustan a ellos.</p>
+        <a class="hero-cta" href="#catalogo">Explorar regalos <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="personality-section" aria-labelledby="personality-title">
+      <h2 id="personality-title">Piensa en <em>cómo es él</em></h2>
+      <p>Te ayudamos a encontrar un regalo según su estilo y personalidad.</p>
+      <div class="personality-grid">
+        <button class="personality-chip" data-category="Accesorios"><span>♛</span>Elegante</button>
+        <button class="personality-chip" data-category="Relojes"><span>◷</span>Clásico</button>
+        <button class="personality-chip" data-category="Todos"><span>⌘</span>Gamer</button>
+        <button class="personality-chip" data-category="Todos"><span>⚽</span>Fanático</button>
+        <button class="personality-chip" data-category="Todos"><span>⌁</span>Autos</button>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="catalog-title">
+        <p class="eyebrow"><span></span> NUESTRO CATÁLOGO <span></span></p>
+        <h2>Encuentra <em>su regalo</em></h2>
+      </div>
+      <div class="toolbar">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar por nombre o categoría..." autocomplete="off"></label>
+        <div class="filters" id="categoryFilters">
+          <button class="filter-chip active" data-category="Todos">Todos</button>
+          <button class="filter-chip" data-category="Carteras">Carteras</button>
+          <button class="filter-chip" data-category="Accesorios">Accesorios</button>
+          <button class="filter-chip" data-category="Relojes">Relojes</button>
+        </div>
+        <select id="sortSelect" aria-label="Ordenar productos">
+          <option value="featured">Destacados</option><option value="low">Menor precio</option><option value="high">Mayor precio</option><option value="az">Nombre A-Z</option>
+        </select>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No encontramos resultados</h3><p>Prueba con otro nombre o categoría.</p><button id="clearSearch">Limpiar búsqueda</button></div>
+    </section>
+
+    <section class="how-section">
+      <h2>¿Cómo hacer tu pedido?</h2>
+      <div class="steps-grid">
+        <div class="step"><b>1</b><span>🛒</span><strong>Elige el regalo</strong><small>que más te guste.</small></div>
+        <div class="step"><b>2</b><span>◉</span><strong>Escríbenos por</strong><small>WhatsApp.</small></div>
+        <div class="step"><b>3</b><span>♧</span><strong>Coordinamos tu</strong><small>pedido y entrega.</small></div>
+      </div>
+    </section>
+
+    <section class="promo-strip">
+      <div class="promo-icon">▣</div>
+      <div><h2>Graba tu unboxing en TikTok</h2><p>y recupera el <strong>20%</strong> de tu compra.</p><small>Video público por 90 días · Condiciones aplican.</small></div>
+      <span class="promo-pill">Hasta S/100<br><small>por pedido</small></span>
+    </section>
+
+    <section class="about-section" id="nosotros">
+      <div class="about-mark"><img src="img/sobre-nosotros.png" alt="Logo de Xinyuan Import" class="about-logo"></div>
+      <div class="about-copy">
+        <p class="eyebrow">CONÓCENOS</p>
+        <h2>Sobre <em>Xinyuan Import</em></h2>
+        <p>Somos una tienda online especializada en regalos para hombre. Seleccionamos productos con estilo, calidad y una presentación ideal para sorprender en cualquier ocasión.</p>
+      </div>
+    </section>
+    <section class="service-strip">
+      <div><span class="service-icon">♧</span><p><b>Envíos a todo</b><small>el Perú</small></p></div>
+      <div><span class="service-icon">♢</span><p><b>Compra</b><small>segura</small></p></div>
+      <div><span class="service-icon">♔</span><p><b>Presentación</b><small>para regalo</small></p></div>
+      <div><span class="service-icon">♧</span><p><b>Atención</b><small>directa</small></p></div>
+    </section>
+    <section class="contact-banner" id="contacto">
+      <div><p class="eyebrow">CONECTA CON NOSOTROS</p><h2>Estamos a un mensaje<br>de distancia.</h2><p class="contact-intro">Síguenos o escríbenos por cualquiera de nuestros canales.</p></div>
+      <div class="social-links">
+        <a class="social-link" href="https://www.instagram.com/xinyuanimport/" target="_blank" rel="noopener noreferrer"><img class="social-logo" src="img/social-instagram.svg" alt=""><span><b>Instagram</b><small>@xinyuanimport</small></span><strong>↗</strong></a>
+        <a class="social-link" href="https://www.tiktok.com/@xinyuanimport_" target="_blank" rel="noopener noreferrer"><img class="social-logo" src="img/social-tiktok.svg" alt=""><span><b>TikTok</b><small>@xinyuanimport_</small></span><strong>↗</strong></a>
+        <a class="social-link" id="generalWhatsapp" href="#" target="_blank" rel="noopener noreferrer"><img class="social-logo" src="img/social-whatsapp.svg" alt=""><span><b>WhatsApp</b><small>933 299 897</small></span><strong>↗</strong></a>
+      </div>
+    </section>
+  </main>
+  <footer><a class="footer-brand" href="#">XINYUAN IMPORT</a><span>© 2026 Xinyuan Import. Todos los derechos reservados.</span><a href="#catalogo">Volver arriba ↑</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
