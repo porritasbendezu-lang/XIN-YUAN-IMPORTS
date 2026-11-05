@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a17">
+  <meta name="description" content="Xinyuan Import: catálogo de productos importados y atención directa por redes sociales.">
+  <title>Xinyuan Import — Catálogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">ATENCIÓN PERSONALIZADA · PEDIDOS DIRECTOS POR WHATSAPP</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Xinyuan Import, inicio">
+      <img class="brand-logo" src="img/logo.png" alt="Logo Xinyuan Import">
+      <span><strong>XINYUAN IMPORT</strong><small>EL REGALO PERFECTO</small></span>
+    </a>
+    <nav><a href="#catalogo">Catálogo</a><a href="#nosotros">Nosotros</a><a class="nav-contact" href="#contacto">Contacto <span>↗</span></a></nav>
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Productos de calidad</p>
+        <h1>Encuentra eso<br>que <em>estabas buscando.</em></h1>
+        <p class="hero-desc">Encuentra el obsequio que mas le guste a él, productos pensados para hacerlo feliz con un solo click.</p>
+        <div class="hero-note"><span class="note-line"></span> ATENCIÓN DIRECTA</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image"></div>
+        <div class="hero-stamp"><span>SELECCIÓN</span><b>2026</b><span>CON ESTILO</span></div>
+        <div class="hero-caption">DETALLES QUE HACEN LA DIFERENCIA.</div>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-heading">
+        <div><p class="eyebrow">NUESTRA TIENDA</p><h2>El catálogo</h2></div>
+        <p class="results-label" id="resultsCount">Mostrando productos</p>
+      </div>
+      <div class="toolbar">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar por nombre o ID..." autocomplete="off"><kbd>/</kbd></label>
+        <div class="filters" id="categoryFilters">
+          <button class="filter-chip active" data-category="Todos">Todos</button>
+          <button class="filter-chip" data-category="Carteras">Carteras</button>
+          <button class="filter-chip" data-category="Accesorios">Accesorios</button>
+          <button class="filter-chip" data-category="Relojes">Relojes</button>
+        </div>
+        <select id="sortSelect" aria-label="Ordenar productos">
+          <option value="featured">Destacados</option><option value="low">Menor precio</option><option value="high">Mayor precio</option><option value="az">Nombre A-Z</option>
+        </select>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No encontramos resultados</h3><p>Prueba con otro nombre o código de producto.</p><button id="clearSearch">Limpiar búsqueda</button></div>
+    </section>
+
+    <section class="about-section" id="nosotros">
+      <div class="about-mark"><img src="img/sobre-nosotros.png" alt="Logo de Xinyuan Import" class="about-logo"></div>
+      <div class="about-copy">
+        <p class="eyebrow">CONÓCENOS</p>
+        <h2>Sobre <em>Xinyuan Import</em></h2>
+        <p>Somos una empresa enfocada en acercarte productos importados y artículos seleccionados a través de un catálogo práctico y sencillo. Buscamos que puedas conocer nuestras opciones, consultar los detalles de cada producto y realizar tus pedidos de manera directa.</p>
+        <p>Creemos en una atención cercana, información clara y una experiencia de compra simple desde el primer contacto.</p>
+      </div>
+    </section>
+    <section class="contact-banner" id="contacto">
+      <div><p class="eyebrow">CONECTA CON NOSOTROS</p><h2>Estamos a un mensaje<br>de distancia.</h2><p class="contact-intro">Síguenos o escríbenos por cualquiera de nuestros canales.</p></div>
+      <div class="social-links">
+        <a class="social-link" href="https://www.instagram.com/xinyuanimport/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Xinyuan Import"><img class="social-logo" src="img/social-instagram.svg" alt="Logo de Instagram"><span><b>Instagram</b><small>@xinyuanimport</small></span><strong>↗</strong></a>
+        <a class="social-link" href="https://www.tiktok.com/@xinyuanimport_" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Xinyuan Import"><img class="social-logo" src="img/social-tiktok.svg" alt="Logo de TikTok"><span><b>TikTok</b><small>@xinyuanimport_</small></span><strong>↗</strong></a>
+        <a class="social-link" id="generalWhatsapp" href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Xinyuan Import"><img class="social-logo" src="img/social-whatsapp.svg" alt="Logo de WhatsApp"><span><b>WhatsApp</b><small>933 299 897</small></span><strong>↗</strong></a>
+      </div>
+    </section>
+  </main>
+  <footer><a class="footer-brand" href="#">XINYUAN IMPORT</a><span>© 2026 Xinyuan Import. Todos los derechos reservados.</span><a href="#catalogo">Volver arriba ↑</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
