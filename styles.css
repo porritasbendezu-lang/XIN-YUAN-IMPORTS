@@ -43,7 +43,7 @@
 
 
 /* --- Rediseño editorial inspirado en la referencia --- */
-:root{--ink:#202b40;--navy:#202b40;--wine:#8b1732;--gold:#a58b61;--cream:#f7f3ef;--paper:#fffdfb;--line:#e8e2dc}
+:root{--ink:#202b40;--navy:#202b40;--wine:#8b1732;--gold:#1b1b1b;--cream:#f7f3ef;--paper:#fffdfb;--line:#e8e2dc}
 body{background:#fffdfb;color:var(--navy)}
 .announcement{height:25px;background:#202b40;font-size:8px;letter-spacing:1.2px}
 .site-header{height:52px;padding:0 6%;background:#fffdfb}
