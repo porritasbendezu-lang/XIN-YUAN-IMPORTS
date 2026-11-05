@@ -39,7 +39,6 @@
 .detail-info{padding:15px 0}.detail-info .eyebrow{margin-bottom:15px}.detail-info h1{font:500 clamp(34px,4vw,49px)/1.12 "Playfair Display",serif;letter-spacing:-1px;margin:15px 0}.detail-tag{display:inline-block;background:var(--cream);padding:7px 10px;color:var(--green);font-size:9px;letter-spacing:1px;text-transform:uppercase}.detail-price{font-size:23px;font-weight:700;margin:0 0 22px}.detail-description{font-size:13px;line-height:1.9;color:#747a74;max-width:470px}.detail-specs{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;margin:27px 0;display:grid;gap:17px}.detail-specs>div{display:flex;justify-content:space-between;gap:15px}.detail-specs small{font-size:9px;letter-spacing:1px;color:#92978f}.detail-specs b{font-size:10px;font-weight:600;text-align:right}.detail-order{width:100%;max-width:360px}.back-catalog{display:block;margin-top:22px}.product-not-found{text-align:center;grid-column:1/-1;padding:80px 20px}.product-not-found h1{font:500 38px "Playfair Display",serif;margin:12px 0 25px}
 @media(max-width:800px){.product-detail-layout{grid-template-columns:1fr;gap:30px}.detail-main-image{height:min(72vw,500px)}.product-detail-shell{padding:40px 6% 65px}.detail-info{padding:0}.detail-header{padding:0 5%}}
 @media(max-width:600px){.social-logo{width:36px;height:36px;flex-basis:36px}.view-product-hint{opacity:1;transform:none;font-size:8px;padding:7px 9px}.back-catalog-header{font-size:10px}.detail-main-image{height:390px}.detail-info h1{font-size:36px}.detail-price{font-size:21px}.gallery-thumb{width:62px;height:62px;flex-basis:62px}.gallery-arrow{width:39px;height:39px}}
-<<<<<<< HEAD
 
 
 /* --- Rediseño editorial inspirado en la referencia --- */
@@ -136,5 +135,3 @@ footer a{color:#fff}.footer-brand{color:#fff}
  .contact-banner{margin:0;padding:25px 7%}.contact-banner h2{font-size:24px}
  footer{padding:17px 6%;font-size:8px}
 }
-=======
->>>>>>> 31ba53df1724ef9876112552122ec2eec2a1e8c2
