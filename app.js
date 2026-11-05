@@ -7,28 +7,26 @@
      image es la foto principal; images contiene las fotos del carrusel.
 */
 
-const WHATSAPP_NUMBER = "51933299897"; // Perú (+51)
+const WHATSAPP_NUMBER = "51942359900"; // Perú (+51)
 
 const PRODUCTS = [
   {
     id: "CN-001",
-    name: "Cartera de cuero",
-    category: "Carteras",
+    name: "Brazalete Lacoste",
+    category: "Accesorios",
     price: 89.90,
-    tag: "Favorito",
-    description: "Una pieza artesanal.",
+    stock: 38, // Coloca aquí las unidades reales disponibles; null = por confirmar.
+    tag: "",
+    description: "Incluye: <br>* Pulsera Lacoste 💛 <br>* Bolsa de tela Lacoste  <br>* Certificado con QR <br>* Caja Lacoste",
     image: "img/producto-01x1.png",
-    images: [
-      "img/producto-01x1.png",
-      "img/producto-01x2.png",
-      "img/producto-01x3.png"
-    ]
+    images: ["img/producto-01x1.png"]
   },
   {
     id: "CN-002",
     name: "Reloj de pulsera",
     category: "Relojes",
     price: 149.00,
+    stock: null,
     tag: "Nuevo",
     description: "La hora XD.",
     image: "img/producto-02x1.png",
@@ -39,6 +37,7 @@ const PRODUCTS = [
     name: "Brazalete de acero",
     category: "Accesorios",
     price: 75.00,
+    stock: null,
     tag: "Edición especial",
     description: "Brillo genial.",
     image: "img/producto-03x1.png",
@@ -49,10 +48,154 @@ const PRODUCTS = [
     name: "Brazalete de acero",
     category: "Accesorios",
     price: 75.00,
+    stock: null,
     tag: "Edición especial",
     description: "Brillo genial.",
-    image: "img/producto-03x1.png",
-    images: ["img/producto-03x1.png"]
+    image: "img/producto-04x1.png",
+    images: ["img/producto-04x1.png"]
+  },
+  {
+    id: "CN-005",
+    name: "Brazalete de acero",
+    category: "Accesorios",
+    price: 75.00,
+    stock: null,
+    tag: "Edición especial",
+    description: "Brillo genial.",
+    image: "img/producto-05x1.png",
+    images: ["img/producto-05x1.png"]
+  },
+  {
+    id: "CN-006",
+    name: "Brazalete de acero",
+    category: "Accesorios",
+    price: 75.00,
+    stock: null,
+    tag: "Edición especial",
+    description: "Brillo genial.",
+    image: "img/producto-06x1.png",
+    images: ["img/producto-06x1.png"]
+  },
+  {
+    id: "CN-007",
+    name: "Brazalete de acero",
+    category: "Accesorios",
+    price: 75.00,
+    stock: null,
+    tag: "Edición especial",
+    description: "Brillo genial.",
+    image: "img/producto-07x1.png",
+    images: ["img/producto-07x1.png"]
+  },
+  {
+    id: "CN-008",
+    name: "Brazalete de acero",
+    category: "Accesorios",
+    price: 75.00,
+    stock: null,
+    tag: "Edición especial",
+    description: "Brillo genial.",
+    image: "img/producto-08x1.png",
+    images: ["img/producto-08x1.png"]
+  },
+  {
+    id: "CN-009",
+    name: "Brazalete de acero",
+    category: "Accesorios",
+    price: 75.00,
+    stock: null,
+    tag: "Edición especial",
+    description: "Brillo genial.",
+    image: "img/producto-09x1.png",
+    images: ["img/producto-09x1.png"]
+  },
+  {
+    id: "CN-010",
+    name: "Brazalete de acero",
+    category: "Accesorios",
+    price: 75.00,
+    stock: null,
+    tag: "Edición especial",
+    description: "Brillo genial.",
+    image: "img/producto-10x1.png",
+    images: ["img/producto-10x1.png"]
+  },
+  {
+    id: "CN-011",
+    name: "Brazalete de acero",
+    category: "Accesorios",
+    price: 75.00,
+    stock: null,
+    tag: "Edición especial",
+    description: "Brillo genial.",
+    image: "img/producto-11x1.png",
+    images: ["img/producto-11x1.png"]
+  },
+  {
+    id: "CN-012",
+    name: "Brazalete de acero",
+    category: "Accesorios",
+    price: 75.00,
+    stock: null,
+    tag: "Edición especial",
+    description: "Brillo genial.",
+    image: "img/producto-12x1.png",
+    images: ["img/producto-12x1.png"]
+  },
+  {
+    id: "CN-013",
+    name: "Brazalete de acero",
+    category: "Accesorios",
+    price: 75.00,
+    stock: null,
+    tag: "Edición especial",
+    description: "Brillo genial.",
+    image: "img/producto-13x1.png",
+    images: ["img/producto-13x1.png"]
+  },
+  {
+    id: "CN-014",
+    name: "Brazalete de acero",
+    category: "Accesorios",
+    price: 75.00,
+    stock: null,
+    tag: "Edición especial",
+    description: "Brillo genial.",
+    image: "img/producto-14x1.png",
+    images: ["img/producto-14x1.png"]
+  },
+  {
+    id: "CN-015",
+    name: "Brazalete de acero",
+    category: "Accesorios",
+    price: 75.00,
+    stock: null,
+    tag: "Edición especial",
+    description: "Brillo genial.",
+    image: "img/producto-15x1.png",
+    images: ["img/producto-15x1.png"]
+  },
+  {
+    id: "CN-016",
+    name: "Brazalete de acero",
+    category: "Accesorios",
+    price: 75.00,
+    stock: null,
+    tag: "Edición especial",
+    description: "Brillo genial.",
+    image: "img/producto-16x1.png",
+    images: ["img/producto-16x1.png"]
+  },
+  {
+    id: "CN-017",
+    name: "Brazalete de acero",
+    category: "Packs",
+    price: 75.00,
+    stock: null,
+    tag: "",
+    description: "Brillo genial.",
+    image: "img/producto-17x1.png",
+    images: ["img/producto-17x1.png"]
   }
 ];
 
@@ -63,6 +206,32 @@ const money = (n) =>
     currency: "PEN"
   }).format(n);
 
+// Stock y ofertas: configura stock como número y originalPrice para las ofertas.
+function productDiscount(p) {
+  if (String(p.tag || "").trim().toLocaleLowerCase("es") !== "oferta") return null;
+  const original = Number(p.originalPrice);
+  if (!Number.isFinite(original) || original <= p.price || p.price < 0) return null;
+  const amount = original - p.price;
+  return { amount, percent: Math.round((amount / original) * 100), original };
+}
+
+function stockInfo(p) {
+  if (!Number.isInteger(p.stock) || p.stock < 0) {
+    return { label: "Stock por confirmar", className: "stock-unknown", available: true };
+  }
+  if (p.stock === 0) {
+    return { label: "Agotado", className: "stock-out", available: false };
+  }
+  return { label: `${p.stock} disponible${p.stock === 1 ? "" : "s"}`, className: "stock-available", available: true };
+}
+
+function productPriceMarkup(p, detail = false) {
+  const discount = productDiscount(p);
+  return `${discount ? `<span class="${detail ? "detail-old-price" : "old-price"}">${money(discount.original)}</span>` : ""}
+    <span class="${detail ? "detail-price-current" : "price-current"}">${money(p.price)}</span>
+    ${discount ? `<span class="${detail ? "detail-discount" : "discount-label"}">-${discount.percent}% · Ahorras ${money(discount.amount)}</span>` : ""}`;
+}
+
 // Generar enlace de WhatsApp para cada producto
 function whatsappLink(p) {
   const msg = `¡Hola! Quiero realizar un pedido:
@@ -70,7 +239,7 @@ function whatsappLink(p) {
 Producto: ${p.name}
 ID: ${p.id}
 Precio: ${money(p.price)}
-Cantidad: 1
+${productDiscount(p) ? `Precio anterior: ${money(productDiscount(p).original)}\nDescuento: ${productDiscount(p).percent}% (ahorras ${money(productDiscount(p).amount)})\n` : ""}Cantidad: 1
 
 ¿Me pueden ayudar con este pedido?`;
 
@@ -152,7 +321,7 @@ if (grid) {
             >
 
             ${p.tag ? `
-              <span class="product-tag">${p.tag}</span>
+              <span class="product-tag ${String(p.tag).toLowerCase() === "oferta" ? "product-tag-offer" : ""}">${String(p.tag).toLowerCase() === "oferta" && productDiscount(p) ? `OFERTA -${productDiscount(p).percent}%` : p.tag}</span>
             ` : ""}
 
             <span class="view-product-hint">
@@ -171,23 +340,21 @@ if (grid) {
 
           <h3>${p.name}</h3>
 
-          <p class="product-description">
-            ${p.description}
-          </p>
-
           <div class="product-bottom">
 
-            <span class="price">
-              ${money(p.price)}
+            <span class="stock-indicator ${stockInfo(p).className}">${stockInfo(p).label}</span>
+            <span class="price ${productDiscount(p) ? "price-offer" : ""}">
+              ${productPriceMarkup(p)}
             </span>
 
             <a
-              class="order-btn"
-              href="${whatsappLink(p)}"
+              class="order-btn ${stockInfo(p).available ? "" : "order-btn-disabled"}"
+              href="${stockInfo(p).available ? whatsappLink(p) : "#"}"
+              aria-disabled="${stockInfo(p).available ? "false" : "true"}"
               target="_blank"
               rel="noopener noreferrer"
             >
-              ◉ Pedir por WhatsApp <span>→</span>
+              ${stockInfo(p).available ? "◉ Pedir por WhatsApp" : "Producto agotado"} <span>→</span>
             </a>
 
           </div>
@@ -197,6 +364,12 @@ if (grid) {
       </article>
     `).join("");
   }
+
+  // Evitar pedidos cuando el producto está agotado.
+  grid.addEventListener("click", (event) => {
+    const disabledOrder = event.target.closest(".order-btn-disabled");
+    if (disabledOrder) event.preventDefault();
+  });
 
   // Buscador
   search?.addEventListener("input", render);
@@ -377,13 +550,13 @@ if (detailRoot) {
         </p>
 
         ${product.tag ? `
-          <span class="detail-tag">${product.tag}</span>
+          <span class="detail-tag ${String(product.tag).toLowerCase() === "oferta" ? "product-tag-offer" : ""}">${String(product.tag).toLowerCase() === "oferta" && productDiscount(product) ? `OFERTA -${productDiscount(product).percent}%` : product.tag}</span>
         ` : ""}
 
         <h1>${product.name}</h1>
 
-        <p class="detail-price">
-          ${money(product.price)}
+        <p class="detail-price ${productDiscount(product) ? "price-offer" : ""}">
+          ${productPriceMarkup(product, true)}
         </p>
 
         <p class="detail-description">
@@ -404,18 +577,19 @@ if (detailRoot) {
 
           <div>
             <small>DISPONIBILIDAD</small>
-            <b>Consulta por WhatsApp</b>
+            <b class="${stockInfo(product).className}">${stockInfo(product).label}</b>
           </div>
 
         </div>
 
         <a
-          class="primary-btn detail-order"
-          href="${whatsappLink(product)}"
+          class="primary-btn detail-order ${stockInfo(product).available ? "" : "order-btn-disabled"}"
+          href="${stockInfo(product).available ? whatsappLink(product) : "#"}"
+          aria-disabled="${stockInfo(product).available ? "false" : "true"}"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Consultar / pedir por WhatsApp <span>↗</span>
+          ${stockInfo(product).available ? "Consultar / pedir por WhatsApp" : "Producto agotado"} <span>↗</span>
         </a>
 
         <a class="back-catalog" href="index.html#catalogo">
@@ -424,6 +598,11 @@ if (detailRoot) {
 
       </section>
     `;
+
+    // Evitar pedidos cuando el producto está agotado.
+    document.querySelector(".detail-order")?.addEventListener("click", (event) => {
+      if (!stockInfo(product).available) event.preventDefault();
+    });
 
     // Funcionamiento de la galería
     let current = 0;

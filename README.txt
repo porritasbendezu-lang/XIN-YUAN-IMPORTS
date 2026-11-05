@@ -57,7 +57,7 @@ OTRAS IMÁGENES
 - img/producto-01.png a img/producto-06.png: imágenes demostrativas del catálogo.
 
 WHATSAPP
-En app.js cambia WHATSAPP_NUMBER por el código de país y número, solo dígitos. Actualmente está configurado como 51933299897 (Perú +51).
+En app.js cambia WHATSAPP_NUMBER por el código de país y número, solo dígitos. Actualmente está configurado como 51942359900 (Perú +51).
 
 FUNCIONES
 - Búsqueda por nombre o ID.
