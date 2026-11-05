@@ -9,8 +9,13 @@ const WHATSAPP_NUMBER = "51933299897"; // Perú (+51)
 
 const PRODUCTS = [
   {id:"CN-001",name:"Cartera de cuero",category:"Carteras",price:89.90,tag:"Favorito",description:"Una pieza artesanal.",image:"img/producto-01x1.png",images:["img/producto-01x1.png", "img/producto-01x2.png", "img/producto-01x3.png"]},
+<<<<<<< HEAD
   {id:"CN-002",name:"Reloj de pulsera",category:"Relojes",price:149.00,tag:"Nuevo",description:"La hora XD.",image:"img/producto-02x1.png",images:["img/producto-02x1.png"]},
   {id:"CN-003",name:"Brazalete de acero",category:"Accesorios",price:75.00,tag:"Edición especial",description:"Brillo genial.",image:"img/producto-03x1.png",images:["img/producto-03x1.png"]}
+=======
+  {id:"CN-002",name:"Reloj de pulsera",category:"Relojes",price:149.00,tag:"Nuevo",description:"La hora XD.",image:"img/producto-02x1.png",images:["img/producto-02.png"]},
+  {id:"CN-003",name:"Brazalete de acero",category:"Accesorios",price:75.00,tag:"Edición especial",description:"Brillo genial.",image:"img/producto-03x1.png",images:["img/producto-03.png"]}
+>>>>>>> 31ba53df1724ef9876112552122ec2eec2a1e8c2
 ];
 
 const money=n=>new Intl.NumberFormat("es-PE",{style:"currency",currency:"PEN"}).format(n);
@@ -26,21 +31,37 @@ if(grid){
   let activeCategory="Todos";
   function render(){
     const term=search.value.trim().toLocaleLowerCase("es");
+<<<<<<< HEAD
     let items=PRODUCTS.filter(p=>(activeCategory==="Todos"||p.category===activeCategory)&&(`${p.name} ${p.id} ${p.category}`.toLocaleLowerCase("es").includes(term)));
     if(sort.value==="low")items.sort((a,b)=>a.price-b.price);
     if(sort.value==="high")items.sort((a,b)=>b.price-a.price);
     if(sort.value==="az")items.sort((a,b)=>a.name.localeCompare(b.name,"es"));
     const resultsCount=document.getElementById("resultsCount");
     if(resultsCount)resultsCount.textContent=`${items.length} producto${items.length===1?"":"s"} encontrado${items.length===1?"":"s"}`;
+=======
+    let items=PRODUCTS.filter(p=>(activeCategory==="Todos"||p.category===activeCategory)&&(`${p.name} ${p.id}`.toLocaleLowerCase("es").includes(term)));
+    if(sort.value==="low")items.sort((a,b)=>a.price-b.price);
+    if(sort.value==="high")items.sort((a,b)=>b.price-a.price);
+    if(sort.value==="az")items.sort((a,b)=>a.name.localeCompare(b.name,"es"));
+    document.getElementById("resultsCount").textContent=`${items.length} producto${items.length===1?"":"s"} encontrado${items.length===1?"":"s"}`;
+>>>>>>> 31ba53df1724ef9876112552122ec2eec2a1e8c2
     document.getElementById("emptyState").hidden=items.length!==0;
     grid.innerHTML=items.map(p=>`
       <article class="product-card">
         <a class="product-image-link" href="producto.html?id=${encodeURIComponent(p.id)}" target="_blank" rel="noopener noreferrer" aria-label="Ver detalles de ${p.name}">
+<<<<<<< HEAD
           <div class="product-image-wrap"><img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.onerror=null;this.style.display='none';" >${p.tag?`<span class="product-tag">${p.tag}</span>`:""}<span class="view-product-hint">Ver producto ↗</span></div>
         </a>
         <div class="product-info"><div class="product-meta"><span>${p.category.toUpperCase()}</span><span>${p.id}</span></div>
         <h3>${p.name}</h3><p class="product-description">${p.description}</p>
         <div class="product-bottom"><span class="price">${money(p.price)}</span><a class="order-btn" href="${whatsappLink(p)}" target="_blank" rel="noopener">◉ Pedir por WhatsApp <span>→</span></a></div></div>
+=======
+          <div class="product-image-wrap"><img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.src='img/producto-01.png'">${p.tag?`<span class="product-tag">${p.tag}</span>`:""}<span class="view-product-hint">Ver producto ↗</span></div>
+        </a>
+        <div class="product-info"><div class="product-meta"><span>${p.category.toUpperCase()}</span><span>${p.id}</span></div>
+        <h3>${p.name}</h3><p class="product-description">${p.description}</p>
+        <div class="product-bottom"><span class="price">${money(p.price)}</span><a class="order-btn" href="${whatsappLink(p)}" target="_blank" rel="noopener">Pedir por WhatsApp <span>↗</span></a></div></div>
+>>>>>>> 31ba53df1724ef9876112552122ec2eec2a1e8c2
       </article>`).join("");
   }
   search.addEventListener("input",render);sort.addEventListener("change",render);
@@ -48,6 +69,7 @@ if(grid){
     activeCategory=btn.dataset.category;
     document.querySelectorAll(".filter-chip").forEach(b=>b.classList.toggle("active",b===btn));render();
   }));
+<<<<<<< HEAD
   document.querySelectorAll(".personality-chip").forEach(btn=>btn.addEventListener("click",()=>{
     activeCategory=btn.dataset.category;
     document.querySelectorAll(".filter-chip").forEach(b=>b.classList.toggle("active",b.dataset.category===activeCategory));
@@ -55,6 +77,8 @@ if(grid){
     render();
     document.getElementById("catalogo").scrollIntoView({behavior:"smooth"});
   }));
+=======
+>>>>>>> 31ba53df1724ef9876112552122ec2eec2a1e8c2
   document.getElementById("clearSearch").addEventListener("click",()=>{search.value="";activeCategory="Todos";document.querySelectorAll(".filter-chip").forEach(b=>b.classList.toggle("active",b.dataset.category==="Todos"));render()});
   document.getElementById("generalWhatsapp").href=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("¡Hola! Quisiera más información sobre sus productos.")}`;
   document.querySelector(".menu-toggle").addEventListener("click",()=>document.querySelector(".site-header nav").classList.toggle("open"));
