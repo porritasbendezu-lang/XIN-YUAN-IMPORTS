@@ -10,7 +10,8 @@ const WHATSAPP_NUMBER = "51933299897"; // Perú (+51)
 const PRODUCTS = [
   {id:"CN-001",name:"Cartera de cuero",category:"Carteras",price:89.90,tag:"Favorito",description:"Una pieza artesanal.",image:"img/producto-01x1.png",images:["img/producto-01x1.png", "img/producto-01x2.png", "img/producto-01x3.png"]},
   {id:"CN-002",name:"Reloj de pulsera",category:"Relojes",price:149.00,tag:"Nuevo",description:"La hora XD.",image:"img/producto-02x1.png",images:["img/producto-02x1.png"]},
-  {id:"CN-003",name:"Brazalete de acero",category:"Accesorios",price:75.00,tag:"Edición especial",description:"Brillo genial.",image:"img/producto-03x1.png",images:["img/producto-03x1.png"]}
+  {id:"CN-003",name:"Brazalete de acero",category:"Accesorios",price:75.00,tag:"Edición especial",description:"Brillo genial.",image:"img/producto-03x1.png",images:["img/producto-03x1.png"]},
+  {id:"CN-004",name:"Brazalete de acero",category:"Accesorios",price:75.00,tag:"Edición especial",description:"Brillo genial.",image:"img/producto-03x1.png",images:["img/producto-03x1.png"]}
 ];
 
 const money=n=>new Intl.NumberFormat("es-PE",{style:"currency",currency:"PEN"}).format(n);
