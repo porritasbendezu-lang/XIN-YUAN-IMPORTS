@@ -96,7 +96,7 @@ const PRODUCTS = [
     category: "Accesorios",
     price: 59.90,
     stock: 9,
-    tag: "Edición especial",
+    tag: "",
     description: "<b>Incluye: </b><br>Pulsera italiana Lamborghini <br>Caja de presentación",
     image: "img/producto-08x1.png",
     images: ["img/producto-08x1.png"]
@@ -107,7 +107,7 @@ const PRODUCTS = [
     category: "Accesorios",
     price: 159.90,
     stock: 0,
-    tag: "Edición especial",
+    tag: "",
     description: "<b>Incluye: </b><br>Reloj U.S. Polo ASSN. con correa marrón <br>Diseño clásico y elegante para hombre <br>Estuche original U.S. Polo ASSN.",
     image: "img/producto-09x1.png",
     images: ["img/producto-09x1.png"]
@@ -118,7 +118,7 @@ const PRODUCTS = [
     category: "Accesorios",
     price: 169.90,
     stock: 0,
-    tag: "Edición especial",
+    tag: "",
     description: "<b>Incluye: </b><br>Reloj Casio Mtp-vd03g-2a <br>Caja original CASIO",
     image: "img/producto-10x1.png",
     images: ["img/producto-10x1.png"]
@@ -129,7 +129,7 @@ const PRODUCTS = [
     category: "Accesorios",
     price: 59.90,
     stock: 16,
-    tag: "Edición especial",
+    tag: "",
     description: "<b>Incluye: </b><br>Pulsera italiana Ferrari <br>Caja de presentación",
     image: "img/producto-11x1.png",
     images: ["img/producto-11x1.png"]
@@ -140,7 +140,7 @@ const PRODUCTS = [
     category: "Accesorios",
     price: 159.90,
     stock: 0,
-    tag: "Edición especial",
+    tag: "",
     description: "<b>Incluye: </b><br>Reloj U.S. Polo ASSN azul con correa marrón <br>Diseño clásico y elegante para hombre <br>Estuche original U.S. Polo ASSN.",
     image: "img/producto-12x1.png",
     images: ["img/producto-12x1.png"]
@@ -151,7 +151,7 @@ const PRODUCTS = [
     category: "Accesorios",
     price: 159.90,
     stock: 0,
-    tag: "Edición especial",
+    tag: "",
     description: "<b>Incluye: </b><br>Reloj U.S. Polo ASSN. <br>Caja original de la marca",
     image: "img/producto-13x1.png",
     images: ["img/producto-13x1.png"]
@@ -162,7 +162,7 @@ const PRODUCTS = [
     category: "Accesorios",
     price: 159.90,
     stock: 0,
-    tag: "Edición especial",
+    tag: "",
     description: "<b>Incluye: </b><br>Reloj U.S. Polo ASSN. rectangular negro <br>Malla metálica negra <br>Estuche original U.S. Polo ASSN.",
     image: "img/producto-14x1.png",
     images: ["img/producto-14x1.png"]
@@ -173,7 +173,7 @@ const PRODUCTS = [
     category: "Accesorios",
     price: 169.90,
     stock: 0,
-    tag: "Edición especial",
+    tag: "",
     description: "<b>Incluye: </b><br>Reloj U.S. Polo ASSN Total Black Coffee 🤎 <br>Caja original de la marca",
     image: "img/producto-15x1.png",
     images: ["img/producto-15x1.png"]
@@ -184,7 +184,7 @@ const PRODUCTS = [
     category: "Detalles",
     price: 59.90,
     stock: 0,
-    tag: "Edición especial",
+    tag: "",
     description: "<b>Incluye: </b><br>Monito Punch Navideño <br>Caja de presentación con listón rojo 🎀",
     image: "img/producto-16x1.png",
     images: ["img/producto-16x1.png"]
@@ -216,8 +216,9 @@ const PRODUCTS = [
     name: "Pack Spiderman",
     category: "Packs",
     price: 79.90,
+    originalPrice: 84.90,
     stock: 65,
-    tag: "",
+    tag: "Oferta",
     description: "<b>Incluye: </b><br>Billetera de Spiderman <br>Llavero de Spiderman <br>Caja de presentacion <br>Targeta de Marvel",
     image: "img/producto-19x1.png",
     images: ["img/producto-19x1.png"]
