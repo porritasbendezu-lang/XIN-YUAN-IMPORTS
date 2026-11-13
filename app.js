@@ -181,7 +181,7 @@ const PRODUCTS = [
   {
     id: "CN-016",
     name: "Monito Punch Navideño",
-    category: "Accesorios",
+    category: "Detalles",
     price: 59.90,
     stock: 0,
     tag: "Edición especial",
@@ -203,7 +203,7 @@ const PRODUCTS = [
   {
     id: "CN-018",
     name: "Brazalete de acero",
-    category: "Packs",
+    category: "Accesorios",
     price: 59.90,
     stock: 0,
     tag: "",
